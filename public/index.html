@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Cinefy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+<header class="cabecalho sticky-top">
+    <div class="container-fluid">
+        <div class="row align-items-center gy-2">
+            <div class="col-auto">
+                <img src="img/logo_branca.png" alt="Cinefy" class="imagem-logo">
+            </div>
+            <div class="col-12 col-lg flex-grow-1">
+                <form class="formulario-pesquisa">
+                    <input type="text" class="campo-pesquisa w-100" placeholder="Pesquisar...">
+                </form>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <nav class="menu-navegacao d-flex flex-wrap justify-content-center gap-2">
+                    <a href="#" class="item-menu">Filmes</a>
+                    <a href="#" class="item-menu">Séries</a>
+                    <a href="#" class="item-menu">Atores</a>
+                    <a href="#" class="item-menu">Login</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="conteudo-principal">
+    <section class="secao-carrossel mb-5 px-3 px-md-4">
+        <div class="carrossel-imagens position-relative">
+            <div class="slide-carrossel">
+                <img src="img/banner.jpg" alt="Destaque" class="w-100 d-block">
+                <div class="texto-carrossel">
+                    <h2>Destaques</h2>
+                    <p>Explore os melhores filmes e séries</p>
+                    <p>Descubra novos favoritos agora</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-exploracao container-lg mb-5 position-relative text-center">
+        <img src="img/img2.jpg" alt="Explorar" class="position-absolute w-100 h-100" style="object-fit: cover; z-index: -1; opacity: 0.5;">
+        <h1 class="titulo-principal">Explore suas séries e filmes favoritos</h1>
+        <p class="subtitulo">Busque por títulos populares e descubra novos conteúdos</p>
+        <form class="formulario-subscribe d-flex justify-content-center">
+            <input type="email" class="campo-subscribe" placeholder="Digite um filme ou série">
+        </form>
+    </section>
+
+    <section class="secao-conteudo container-lg">
+        <article class="categoria-filmes bg-white rounded-3 p-4 p-md-5 mb-4">
+            <h2 class="titulo-categoria mb-4">Filmes</h2>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card-filme">
+                        <img src="img/img-generica.jpg" alt="Kung Fu Panda" class="img-card">
+                        <div class="info-card">
+                            <p class="texto-cardtit">Kung Fu Panda</p>
+                            <p class="texto-card">Animação • Ação</p>
+                            <p class="texto-card">Um panda improvável se torna herói</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card-filme">
+                        <img src="img/img-generica.jpg" alt="O Show de Truman" class="img-card">
+                        <div class="info-card">
+                            <p class="texto-cardtit">O Show de Truman</p>
+                            <p class="texto-card">Drama • Ficção</p>
+                            <p class="texto-card">Uma vida transmitida sem saber</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card-filme">
+                        <img src="img/img-generica.jpg" alt="Seven" class="img-card">
+                        <div class="info-card">
+                            <p class="texto-cardtit">Seven: Os 7 Pecados</p>
+                            <p class="texto-card">Suspense • Crime</p>
+                            <p class="texto-card">Um serial killer baseado nos pecados</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="categoria-series bg-white rounded-3 p-4 p-md-5 mb-4">
+            <h2 class="titulo-categoria mb-4">Séries</h2>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card-filme">
+                        <img src="img/img-generica.jpg" alt="Dexter" class="img-card">
+                        <div class="info-card">
+                            <p class="texto-cardtit">Dexter</p>
+                            <p class="texto-card">Crime • Drama</p>
+                            <p class="texto-card">Um assassino com código moral</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card-filme">
+                        <img src="img/img-generica.jpg" alt="Breaking Bad" class="img-card">
+                        <div class="info-card">
+                            <p class="texto-cardtit">Breaking Bad</p>
+                            <p class="texto-card">Drama • Crime</p>
+                            <p class="texto-card">Professor vira produtor de drogas</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card-filme">
+                        <img src="img/img-generica.jpg" alt="Peaky Blinders" class="img-card">
+                        <div class="info-card">
+                            <p class="texto-cardtit">Peaky Blinders</p>
+                            <p class="texto-card">Crime • Drama</p>
+                            <p class="texto-card">Gangue inglesa pós-guerra</p>
+                        </div>
+                        <button class="botao-ver">Ver</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="secao-botoes container-lg mb-5">
+        <div class="row g-3 justify-content-center">
+            <div class="col-12 col-sm-auto">
+                <button class="botao-destaque w-100">TOP SERIES</button>
+            </div>
+            <div class="col-12 col-sm-auto">
+                <button class="botao-destaque w-100">TOP FILMES</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-lancamentos container-lg mb-5 text-center">
+        <button class="botao-lancamentos">LANÇAMENTOS</button>
+    </section>
+</main>
+
+<footer class="rodape mt-5">
+    <div class="container-fluid">
+        <p class="texto-rodape m-0">Cinefy 2026 - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
